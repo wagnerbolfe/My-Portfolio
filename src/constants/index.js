@@ -74,28 +74,30 @@ const dockApps = [
   },
 ];
 
-const blogPosts = [
+const certifications = [
   {
     id: 1,
-    date: "Sep 2, 2025",
-    title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+    title: "Microsoft Certified: Azure Developer Associate",
+    image: "/images/associate.svg",
+    link: "https://learn.microsoft.com/en-us/users/wagnerbolfe/credentials/certification/azure-developer?tab=credentials-tab",
   },
   {
     id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+    title: "Microsoft Certified: Azure AI Engineer Associate",
+    image: "/images/associate.svg",
+    link: "https://learn.microsoft.com/en-us/users/wagnerbolfe/credentials/certification/azure-ai-engineer?tab=credentials-tab",
   },
   {
     id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    title: "Microsoft Certified: DevOps Engineer Expert",
+    image: "/images/expert.svg",
+    link: "https://learn.microsoft.com/en-us/users/wagnerbolfe/credentials/certification/devops-engineer?tab=credentials-tab",
+  },
+  {
+    id: 4,
+    title: "AWS Cloud Practitioner",
+    image: "/images/aws.png",
+    link: "https://cp.certmetrics.com/amazon/en/public/verify/credential/79808213424f4ff880254e79e9ea4846",
   },
 ];
 
@@ -136,20 +138,13 @@ const socials = [
   },
   {
     id: 2,
-    text: "Platform",
+    text: "Website",
     icon: "/icons/atom.svg",
     bg: "#4bcb63",
     link: "https://wagnerbolfe.dev/",
   },
   {
     id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/wagnerbolfe",
-  },
-  {
-    id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
@@ -208,7 +203,7 @@ export {
   navLinks,
   navIcons,
   dockApps,
-  blogPosts,
+  certifications,
   techStack,
   socials,
   photosLinks,
@@ -225,7 +220,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Dev Flowner",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -233,7 +228,7 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Dev Flowner Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
@@ -247,30 +242,21 @@ const WORK_LOCATION = {
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "Dev Flowner",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://dev-flowner.vercel.app/",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "dev-flowner.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           imageUrl: "/images/project-1.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
         },
       ],
     },
@@ -278,7 +264,7 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "Boardner",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -286,7 +272,7 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "Boardner Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
@@ -300,30 +286,21 @@ const WORK_LOCATION = {
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "Boardner",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://boardner.vercel.app/",
           position: "top-20 left-20",
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "boardner.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 left-80",
           imageUrl: "/images/project-2.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 left-5",
         },
       ],
     },
@@ -331,7 +308,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "Codener",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -339,13 +316,13 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "Codener Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
+            "Our Codener is a fast and convenient way to order meals from your favorite restaurants.",
             "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
             "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
             "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
@@ -353,30 +330,21 @@ const WORK_LOCATION = {
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "Codener",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://codener.vercel.app/",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "codener.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           imageUrl: "/images/project-3.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
         },
       ],
     },

@@ -60,7 +60,7 @@ const Dock = () => {
     };
   }, []);
 
-  const toogleApp = (app) => {
+  const toggleApp = (app) => {
     if (!app.canOpen) return;
 
     const window = windows[app.id];
@@ -90,7 +90,7 @@ const Dock = () => {
               data-tooltip-content={name}
               data-tooltip-delay-show={150}
               disabled={!canOpen}
-              onClick={() => toogleApp({ id, canOpen })}
+              onClick={() => toggleApp({ id, canOpen })}
             >
               <img
                 src={`/images/${icon}`}
