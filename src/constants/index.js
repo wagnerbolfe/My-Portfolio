@@ -50,7 +50,7 @@ const dockApps = [
   },
   {
     id: "photos",
-    name: "Gallery", // was "Photos"
+    name: "Education", // was "Photos"
     icon: "photos.png",
     canOpen: true,
   },
@@ -99,6 +99,27 @@ const certifications = [
     image: "/images/aws.png",
     link: "https://cp.certmetrics.com/amazon/en/public/verify/credential/79808213424f4ff880254e79e9ea4846",
   },
+];
+
+const studies = [
+  {
+    id: 1,
+    title: "Multimedia Production / Associate Degree",
+    school: "FTEC",
+    date: "2012 - 2017"
+  },
+  {
+    id: 2,
+    title: "Computer Science/ Bachelor's Degree",
+    school: "FSG",
+    date: "2019 - 2024"
+  },
+  {
+    id: 3,
+    title: "Advanced Development in Go / Postgraduate",
+    school: "FullCycle",
+    date: "2025 - 2026"
+  }
 ];
 
 const techStack = [
@@ -204,6 +225,7 @@ export {
   navIcons,
   dockApps,
   certifications,
+  studies,
   techStack,
   socials,
   photosLinks,

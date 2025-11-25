@@ -9,7 +9,7 @@ import {
   Finder,
   Text,
   Image,
-  Contact,
+  Contact, Photos,
 } from "#windows";
 
 gsap.registerPlugin(Draggable);
@@ -23,6 +23,7 @@ const App = () => {
 
       <Terminal />
       <Safari />
+      <Photos />
       <Resume />
       <Finder />
       <Text />
